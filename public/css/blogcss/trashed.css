@@ -1,0 +1,133 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header h2 {
+    text-align: center;
+    color: #2c3e50;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #1abc9c;
+}
+
+.main > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main > div > a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: background-color 0.3s;
+}
+
+.main > div > a:hover {
+    background-color: #2980b9;
+}
+
+.main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.main ul li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main ul li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+
+.main ul li h3 {
+    color: #2c3e50;
+    margin: 15px 15px 5px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+.main ul li p {
+    margin: 10px 15px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.main ul li p:last-of-type {
+    font-weight: bold;
+    color: #1abc9c;
+    margin-top: 5px;
+    font-size: 0.85em;
+}
+
+.main ul li > a,
+.main ul li form button[type="submit"] {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 15px 5px 15px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main ul li a[href*="/show"] {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.main ul li a[href*="/show"]:hover {
+    background-color: #8e44ad;
+}
+
+.main ul li a[href*="/edit"] {
+    background-color: #f39c12;
+    color: white;
+}
+
+.main ul li a[href*="/edit"]:hover {
+    background-color: #e67e22;
+}
+
+.main ul li form button[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+    margin-right: 15px;
+}
+
+.main ul li form button[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+.main ul li form {
+    display: inline;
+}
